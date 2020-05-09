@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/gif/png" href="images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <img src="images/transparentbackground.png" wdith="32px" height="33px" />
+      <button class="button"><a href="index.html" class="link-button"> Go to Google Search</a></button>
+    </header>
+
+    <div id="page-title">Advanced Search</div>
+
+    <div id="advanced-search-container">
+      <p id="find-pages-with">Find pages with...</p>
+
+      <div class="row">
+        <div>all these words:</div>
+        <input type="text" class="advanced-search-input" />
+        <div>Type the important words: <span class="small-text">tri-colour rat terrier</span></div>
+      </div>
+
+      <div class="row">
+        <div>This exact word or phrase</div>
+        <input type="text" class="advanced-search-input" />
+        <div>Put exact words in quote: <span class="small-text">rat terrier</span></div>
+      </div>
+
+      <div class="row">
+        <div>any of these words:</div>
+        <input type="text" class="advanced-search-input" />
+        <div>
+          Type the important words:
+          <span class="small-text"
+            >Type <span class="small-text">OR</span> between all the words you want: miniature OR standard</span
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div>None of these words</div>
+        <input type="text" class="advanced-search-input" />
+        <div>
+          Put a minus sign just before words that you don't want:<span class="small-text"
+            >-rodent, -"Jack Russell"</span
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div>numbers ranging from:</div>
+        <div>
+          <input type="text" class="advanced-search-input" style="width: 45%;" /> to
+          <input type="text" class="advanced-search-input" style="width: 46%;" />
+        </div>
+        <div>
+          Put two full stops between the numbers and add a unit of measurement:
+          <span class="small-text">10..35 kg, £300..£500, 2010..2011</span>
+        </div>
+      </div>
+
+      <div class="border-top">Then narrow your results by...</div>
+
+      <div class="row">
+        <label for="language">language:</label>
+        <select id="language">
+          <option value="anyLanguage">any language</option>
+          <option value="afrikaanas">Afrikaans</option>
+          <option value="chiense">Chinese</option>
+          <option value="english">English</option>
+          <option value="greek">Greek</option>
+          <option value="hebrew">Hebrew</option>
+          <option value="spanish">Spanish</option>
+        </select>
+        Find pages in the language that you select.
+      </div>
+
+      <div class="row">
+        <label for="region">region:</label>
+        <select id="region">
+          <option value="bahamas">Bahamas</option>
+          <option value="ghana">Ghana</option>
+          <option value="brazil">Brazil</option>
+          <option value="germany">Germany</option>
+          <option value="egypt">Egypt</option>
+          <option value="greece">Greece</option>
+        </select>
+        Find pages published in a particular region.
+      </div>
+
+      <div class="row">
+        <label for="cars">last update:</label>
+        <select id="cars">
+          <option value="volvo">Any time</option>
+          <option value="saab">Past 24 hours</option>
+          <option value="opel">Past month</option>
+          <option value="audi">Past week</option>
+          <option value="audi">Past year</option>
+        </select>
+        Find pages updated within the time that you specify.
+      </div>
+
+      <div class="row">
+        <div>site or domain:</div>
+        <input type="text" class="advanced-search-input" />
+        <div>
+          Search one site like <span class="small-text"> wikipedia.org</span> or limit your results to a domain like
+          <span class="small-text"> .edu, .org or .gov </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="cars">terms appearing:</label>
+        <select id="cars">
+          <option value="volvo">any where in the page</option>
+          <option value="saab">in the text of the page</option>
+          <option value="opel">in the title of the page</option>
+          <option value="audi">in the URL of the page</option>
+        </select>
+        Search for terms in the whole page, page title or web address, or links to the page you're looking for.
+      </div>
+
+      <div class="row">
+        <label for="cars"
+          ><a
+            href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637246451898523328-3247277316&rd=1"
+            >safe search:</a
+          ></label
+        >
+        <select id="cars">
+          <option value="volvo">show most relevant result</option>
+          <option value="saab">filter explicit results</option>
+        </select>
+        Tell SafeSearch whether to filter sexually explicit content.
+      </div>
+
+      <div class="row">
+        <label for="cars">file type:</label>
+        <select id="cars">
+          <option value="volvo">any format</option>
+          <option value="saab">Adobe Acrobat format (.pdf)</option>
+          <option value="opel">Microsoft Excel (.xls)</option>
+          <option value="audi">Audi</option>
+        </select>
+        Find pages in the format that you prefer.
+      </div>
+
+      <div class="row">
+        <label for="cars"
+          ><a
+            href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&visit_id=637246571708309500-3889457378&rd=1"
+            >usage rights:</a
+          ></label
+        >
+        <select id="cars">
+          <option value="volvo">not filtered by lincence</option>
+          <option value="saab">free to share</option>
+          <option value="opel">free to modify</option>
+          <option value="audi">Audi</option>
+        </select>
+        Find pages that you are free to use yourself.
+      </div>
+
+      <div class="row">
+        <div></div>
+        <button id="advanced-search-button">Advanced Search</button>
+        <div></div>
+      </div>
+
+      <div class="border-top" id="advanced-search-links">
+        <p style="margin-bottom: 15px;">You can also...</p>
+        <a
+          href="https://support.google.com/websearch/answer/2466433?visit_id=637246571708309500-3889457378&p=adv_pages_similar&hl=en&rd=1"
+          >Find pages that are similar to the URL</a
+        >
+        <a
+          href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637246571708309500-3889457378&rd=1"
+          >Find pages that you've listed</a
+        >
+        <a
+          href="https://support.google.com/websearch/answer/2466433?visit_id=637246571708309500-3889457378&p=adv_operators&hl=en&rd=1"
+          >Use operators in the search box</a
+        >
+        <a href="https://www.google.com/preferences?hl=en-GH">Customise your search</a>
+      </div>
+    </div>
+
+    <footer>
+      <div id="ghana">Ghana</div>
+      <div id="footer-links">
+        <a
+          href="https://support.google.com/websearch/?visit_id=637246392356130770-2366646213&hl=en-GH&rd=2#topic=3378866"
+          >Help</a
+        >
+        <a href="https://policies.google.com/privacy?fg=1">Privacy</a>
+        <a href="https://policies.google.com/terms?fg=1">Terms</a>
+      </div>
+    </footer>
+  </body>
+</html>
