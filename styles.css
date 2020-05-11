@@ -68,6 +68,7 @@ body {
   margin: 11px 4px;
   outline: none;
   text-decoration: none;
+  align-self: center;
 }
 
 .button:hover {
@@ -85,16 +86,16 @@ body {
 }
 
 header {
-  background-color: coral;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgb(198, 198, 198);
+  padding-right: 30px;
 }
 
 #page-title {
   color: #d93025;
   font-size: 20px;
   padding: 30px;
-  border-bottom: 1px solid rgb(198, 198, 198);
 }
 
 #advanced-search-container {
@@ -168,6 +169,7 @@ footer {
 
 #footer-links > a:hover {
   color: #5f6368;
+  text-decoration: underline;
 }
 
 #ghana {
